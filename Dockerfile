@@ -13,8 +13,8 @@ WORKDIR /home/ubuntu/Desktop/docker_ci-cd
 #to COPY the remote file at working directory in container
 COPY pro1.py ./
 # Now the structure looks like this '/usr/app/src/test.py'
-RUN sudo usermod -aG docker ${USER}
-RUN su - ${USER}
+#RUN sudo usermod -aG docker ${USER}
+#RUN su - ${USER}
 
 #CMD instruction should be used to run the software
 #contained by your image, along with any arguments.
